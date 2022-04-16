@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function index() {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full">
       {/* อันที่ 1 home */}
       <div className="home">
         {/* left */}

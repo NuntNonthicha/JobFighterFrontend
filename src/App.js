@@ -13,6 +13,7 @@ import Signupcompany from "./page/Signup-company";
 import Homestudent from "./page/Home-student";
 import Homecompany from "./page/Home-company";
 import Search from "./page/Search";
+import Aboutus from "./page/About-us";
 import Layout from "./page/Layout";
 
 
@@ -34,6 +35,7 @@ function App(){
           <Route path="/homestudent" element={<Homestudent />} />
           <Route path="/homecompany" element={<Homecompany />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/aboutus" element={<Aboutus/>} />
 
           </Route>
         </Routes>

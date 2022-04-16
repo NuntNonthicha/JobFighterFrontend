@@ -7,7 +7,7 @@ import Profile from '../../assets/pics/Profile.png';
 
 
 const navigation = [
-  { name: 'หน้าหลัก', href: '/homecompany'  , current: false },
+  { name: 'หน้าหลัก', href: '/homecompany'  , current: false},
   { name: 'ค้นหางาน', href: '/search'  , current: false },
   { name: 'สร้างโพสต์', href: '', current: false },
   { name: 'ใบสมัคร', href: '', current: false },
@@ -140,7 +140,7 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-teal-400 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-teal-400 text-white' : 'text-gray-300 hover:bg-teal-400 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
