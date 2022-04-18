@@ -250,7 +250,7 @@
 //                         span="location"
 //                       />
 //                       {/* ที่อยู่ address บริษัท */}
-//                       <div className="px-0.5 py-1.5  focus:outline-none ml-2">
+//                       <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
 //                          {/* {value}  */}
 //                         {/* รอเอาค่าจากหลังบ้านมาใส่ */}
 //                       </div>
