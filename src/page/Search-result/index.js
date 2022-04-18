@@ -28,9 +28,9 @@ function Send_data() {
     .map((user) => {
       return (
         <div className="">
-          {/* ผลการค้นหา */}
+          {/* ผลการค้นหา ใส่ตัวเเปรในนี้*/}
           <div className="w-3/4 w-100 h-55 rounded-xl bg-white drop-shadow-md p-2 my-4">
-            <div className="grid grid-rows-3 grid-flow-col gap-0.5 ">
+            <div className="grid grid-rows-3 grid-flow-col gap-1.5 ">
               {/* ชื่อตำเเหน่งงาน */}
               <div className="row-span-1 col-span-1 bg-fuchsia-200">
                 <div className="px-4 py-1.5 focus:outline-none font-bold text-black text-lg ml-2">
@@ -48,7 +48,7 @@ function Send_data() {
               </div>
 
               {/* logo company */}
-              <div className="row-span-3 ml-12">
+              <div className="row-span-3 ml-20">
                 <div className="w-20 h-20 rounded-xl bg-[#E2E2E2] ">
                   <img
                     src={Company1} //ลองใส่รูปไปก่อน รอดึง logo จากหลังบ้าน
@@ -201,8 +201,9 @@ function Send_data() {
                 ผลการค้นหา
               </div>
               <div className="flex flex-col w-full h-full ">
-                {displayUsers}
+                {displayUsers} 
                 <div className="flex h-50  mt-5">
+                  {/* ปุ่มเปลี่ยนหน้า */}
                   <ul className="button-list">
                       <ReactPaginate
                         previousLabel={"Previous"}
