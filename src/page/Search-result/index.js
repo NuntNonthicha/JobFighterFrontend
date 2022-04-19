@@ -48,7 +48,7 @@ function Send_data() {
               </div>
 
               {/* logo company */}
-              <div className="row-span-3 ml-20">
+              <div className="row-span-3 ml-20 grid justify-items-center">
                 <div className="w-20 h-20 rounded-xl bg-[#E2E2E2] ">
                   <img
                     src={Company1} //ลองใส่รูปไปก่อน รอดึง logo จากหลังบ้าน
