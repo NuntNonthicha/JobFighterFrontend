@@ -30,7 +30,7 @@ function Send_data() {
         <div className="">
           {/* ผลการค้นหา ที่เเสดง card ออกมาเป็นบล็อคๆ*/}
           <div className="w-3/4 w-100 h-55 rounded-xl bg-white drop-shadow-md p-2 my-4">
-            <div className="grid grid-rows-3 grid-flow-col gap-1.5 ">
+            <div className="grid grid-rows-3 grid-flow-col gap-0.5 ">
               {/* ชื่อตำเเหน่งงาน */}
               <div className="row-span-1 col-span-1 ">
                 <div className="px-4 py-1.5 focus:outline-none font-bold text-black text-lg ml-2">
@@ -103,7 +103,7 @@ function Send_data() {
                 </label>
                 <select
                   name="college"
-                  className=" w-100 h-10 rounded-xl bg-white drop-shadow-md 
+                  className=" w-100 h-10 rounded-xl bg-white drop-shadow-md  text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
                 >
                   <option>ลาดกระบัง</option>
@@ -116,7 +116,7 @@ function Send_data() {
                 </label>
                 <select
                   name="faculty"
-                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md 
+                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
                 >
                   <option>วิศวกรรมศาสตร์</option>
@@ -128,7 +128,7 @@ function Send_data() {
                 </label>
                 <select
                   name="program"
-                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md
+                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
                 >
                   <option>คอมพิวเตอร์</option>
@@ -140,7 +140,7 @@ function Send_data() {
                 </label>
                 <select
                   name="jobType"
-                  className=" w-100 h-10 rounded-xl bg-white drop-shadow-md
+                  className=" w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
                 >
                   <option>Software</option>
@@ -152,7 +152,7 @@ function Send_data() {
                 </label>
                 <select
                   name="address"
-                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md
+                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
                 ></select>
 
@@ -162,11 +162,11 @@ function Send_data() {
                 </label>
                 <input
                   name="companyName"
-                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md 
+                  className="w-100 h-10 rounded-xl bg-white drop-shadow-md placeholder:text-zinc-400
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]
                   disabled:text-[#FF3358] disabled:border-[#FF3358] disabled:shadow-none
                   invalid:border-[#FF3358] invalid:text-[#FF3358] focus:invalid:border-[#FF3358] focus:invalid:ring-[#FF3358]"
-                  placeholder="ระบุตำเเหน่งงานหรือชื่อบริษัท"
+                  placeholder="ระบุตำเเหน่งงานหรือชื่อบริษัท "
                 ></input>
 
                 {/* เงินเดือน*/}
@@ -177,7 +177,7 @@ function Send_data() {
                   {/* ช่วงเงินเดือน-ข้้นต่ำ */}
                   <input
                     name="wageMin"
-                    className=" w-2/4 h-10 rounded-xl bg-white drop-shadow-md 
+                    className=" w-2/4 h-10 rounded-xl bg-white drop-shadow-md placeholder:text-zinc-400
                     focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]
                     disabled:text-[#FF3358] disabled:border-[#FF3358] disabled:shadow-none
                     invalid:border-[#FF3358] invalid:text-[#FF3358] focus:invalid:border-[#FF3358] focus:invalid:ring-[#FF3358]"
@@ -187,7 +187,7 @@ function Send_data() {
                   {/* ช่วงเงินเดือน-มากสุด*/}
                   <input
                     name="wageMax"
-                    className=" w-2/4 h-10 rounded-xl bg-white drop-shadow-md
+                    className=" w-2/4 h-10 rounded-xl bg-white drop-shadow-md placeholder:text-zinc-400
                     focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]
                     disabled:text-[#FF3358] disabled:border-[#FF3358] disabled:shadow-none
                     invalid:border-[#FF3358] invalid:text-[#FF3358] focus:invalid:border-[#FF3358] focus:invalid:ring-[#FF3358] "
