@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 //import Address from "../../assets/pics/Address.png";
 //import Company1 from "../../assets/pics/Company1.png";
 import axios from "axios";
-import SearchResult from "./component";
+//import SearchResult from "./component";
 
 const API_PROVINCE =
   "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json";
 
-const Search = () => {
+const SearchResult = () => {
   const [provinces, setProvice] = useState([]);
 
   async function fetchProvincesName() {
