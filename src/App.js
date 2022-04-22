@@ -15,7 +15,8 @@ import Homecompany from "./page/Home-company";
 import Search from "./page/Search";
 import Aboutus from "./page/About-us";
 import Historystudent from "./page/History-student";
-import Searchresult from "./page/Search-result";
+import Applicantcompany from "./page/Applicant-company";
+// import Searchresult from "./page/Search-result";
 import Layout from "./page/Layout";
 
 
@@ -39,7 +40,9 @@ function App(){
           <Route path="/search" element={<Search />} />
           <Route path="/historystudent" element={<Historystudent/>} />
           <Route path="/aboutus" element={<Aboutus/>} />
-          <Route path="/searchresult" element={<Searchresult/>} />
+          {/* <Route path="/searchresult" element={<Searchresult/>} /> */}
+          <Route path="/applicantcompany" element={<Applicantcompany/>} />
+
 
           </Route>
         </Routes>

@@ -10,7 +10,7 @@ const navigation = [
   { name: 'หน้าหลัก', href: '/homestudent'  , current: false },
   { name: 'ค้นหางาน', href: '/search'  , current: false },
   { name: 'ประวัติสมัครงาน', href: '/historystudent', current: false },
-  { name: 'ติดต่อสอบถาม', href: '#', current: false },
+  { name: 'ติดต่อสอบถาม', href: '/applicantcompany', current: false },
 ]
 
 function classNames(...classes) {

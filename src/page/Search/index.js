@@ -29,7 +29,7 @@ function Send_data() {
     ) /* สมมติอยู่ในหน้าที่ 6 ก็เเสดงว่าเราเห็นผู้ใช้มาเเล้ว 18 คน , ต่อไปก็หน้าที่ 7 คือหน้าที่ต้องการอันดับเเรก จึงเปนตัวเเปรนี้ + หน้าที่เยี่ยมชมรวมถึงจน.ผู้ใช้ต่อหน้า หน้าที่ 6 มี item 18 ซึ่ง pagesVisited = 18 + 3 */
     .map((user) => {
       return (
-        <div className="">
+        <div className="user">
           {/* ผลการค้นหา ที่เเสดง card ออกมาเป็นบล็อคๆ*/}
           <div className="w-3/4 w-100 h-55 rounded-xl bg-white drop-shadow-md p-2 my-4 font-sans">
             <div className="grid grid-rows-3 grid-flow-col gap-0.5 ">
@@ -233,7 +233,7 @@ function Send_data() {
                 {/* Button Search*/}
                 <div className="flex items-center ml-2.5 mt-3 space-y-4 ">
                   <button
-                    class=" bg-[#24AB82] drop-shadow-md font-bold text-white text-2xl rounded-xl px-6 py-2.5 hover:bg-[#1F795E] hover:ring-2 hover:ring-white "
+                    className=" bg-[#24AB82] drop-shadow-md font-bold text-white text-2xl rounded-xl px-6 py-2.5 hover:bg-[#1F795E] hover:ring-2 hover:ring-white "
                     //disabled={value.wageMin < 0 || value.wageMax < 0}
                   >
                     ค้นหา

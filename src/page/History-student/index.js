@@ -2,6 +2,7 @@ import React from "react";
 import Address from "../../assets/pics/Address.png";
 import Company1 from "../../assets/pics/Company1.png";
 
+
 const index = () => {
   return (
     <div className="flex flex-col items-center mx-72 my-20 bg-[#F2EFEF] rounded-lg font-sans ">
@@ -15,7 +16,7 @@ const index = () => {
         รายละเอียดการสมัคร
       </div>
 
-      <div className="flex flex-col items-center w-3/4 h-full rounded-xl  drop-shadow-md p-2 my-3 font-sans">
+      <div className="flex flex-col items-center w-3/4 h-full rounded-xl drop-shadow-xl p-2 my-3  font-sans">
         {/* card show รายเละเอียดการสมัครเเต่ละบล็อกๆ */}
         <div className="w-full h-55 rounded-xl bg-white mb-4">
           <div className="grid grid-row-3">
@@ -73,6 +74,7 @@ const index = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );
