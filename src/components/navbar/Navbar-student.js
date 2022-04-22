@@ -9,7 +9,7 @@ import Profile from '../../assets/pics/Profile.png';
 const navigation = [
   { name: 'หน้าหลัก', href: '/homestudent'  , current: false },
   { name: 'ค้นหางาน', href: '/search'  , current: false },
-  { name: 'ประวัติสมัครงาน', href: '/searchresult', current: false },
+  { name: 'ประวัติสมัครงาน', href: '/historystudent', current: false },
   { name: 'ติดต่อสอบถาม', href: '#', current: false },
 ]
 

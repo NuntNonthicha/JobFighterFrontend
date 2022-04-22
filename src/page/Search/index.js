@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Address from "../../assets/pics/Address.png";
 import Company1 from "../../assets/pics/Company1.png";
+import Salary from "../../assets/pics/Salary.png";
 //import axios from "axios";
 import JsonData from "./MOCK_DATA.json";
 import ReactPaginate from "react-paginate";
@@ -33,7 +34,7 @@ function Send_data() {
           <div className="w-3/4 w-100 h-55 rounded-xl bg-white drop-shadow-md p-2 my-4 font-sans">
             <div className="grid grid-rows-3 grid-flow-col gap-0.5 ">
               
-              {/* ชื่อตำเเหน่งงาน */}
+              {/* ชื่อบริษัท */}
               <div className="row-span-1 col-span-1 ">
                 <div className="px-4 py-1.5 focus:outline-none font-bold text-black text-lg ml-2">
                   {user.firstName}
@@ -41,7 +42,7 @@ function Send_data() {
                 </div>
               </div>
 
-              {/* ชื่อบริษัท */}
+              {/* ชื่อตำเเหน่งงาน */}
               <div className="row-span-1 col-span-1 ">
                 <div className=" px-4 py-1.5  focus:outline-none text-black ml-2">
                   {user.lastName}
@@ -50,7 +51,7 @@ function Send_data() {
               </div>
 
               {/* logo company */}
-              <div className="row-span-3 ml-20 grid justify-items-center">
+              <div className="row-span-3 ml-20 grid justify-items-center ">
                 <div className="w-20 h-20 rounded-xl bg-[#E2E2E2] ">
                   <img
                     src={Company1} //ลองใส่รูปไปก่อน รอดึง logo จากหลังบ้าน
@@ -69,6 +70,18 @@ function Send_data() {
                 span="location"
               />
               {/* ที่อยู่ address บริษัท */}
+              <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
+                {user.email}
+                {/* รอเอาค่าจากหลังบ้านมาใส่ */}
+              </div>
+              
+              {/* เงินเดือน บริษัท */}
+              <img
+                src={Salary}
+                alt="logoAddress"
+                className=" h-5 w-5 ml-8"
+                span="location"
+              />
               <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
                 {user.email}
                 {/* รอเอาค่าจากหลังบ้านมาใส่ */}
