@@ -252,7 +252,7 @@ function Send_data() {
                   {displayUsers}
                   <div className="flex h-50  mt-5">
                     {/* ปุ่มเปลี่ยนหน้า */}
-                    <ul className="button-list">
+                    <ul className="button-list ">
                       <ReactPaginate
                         previousLabel={"Previous"}
                         nextLabel={"Next"}

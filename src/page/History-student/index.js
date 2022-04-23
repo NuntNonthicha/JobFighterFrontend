@@ -16,7 +16,7 @@ const index = () => {
         รายละเอียดการสมัคร
       </div>
 
-      <div className="flex flex-col items-center w-3/4 h-full rounded-xl drop-shadow-xl p-2 my-3  font-sans">
+      <div className="flex flex-col items-center w-3/4 h-full rounded-xl drop-shadow-xl p-2 my-3 font-sans">
         {/* card show รายเละเอียดการสมัครเเต่ละบล็อกๆ */}
         <div className="w-full h-55 rounded-xl bg-white mb-4">
           <div className="grid grid-row-3">
@@ -51,7 +51,7 @@ const index = () => {
                     {/* รอเอาค่าจากหลังบ้านมาใส่ */}
                   </div>
                 </div>
-                  
+
                 <div className="flex items-center row-span-3  justify-center">
                   <div className="w-28 h-28 rounded-xl bg-[#E2E2E2] ">
                     {/* logo company */}
@@ -74,7 +74,7 @@ const index = () => {
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   );
