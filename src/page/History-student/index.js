@@ -5,7 +5,7 @@ import Company1 from "../../assets/pics/Company1.png";
 
 const index = () => {
   return (
-    <div className="flex flex-col items-center mx-72 my-20 bg-[#F2EFEF] rounded-lg font-sans ">
+    <div className="flex flex-col items-center mx-72 my-20 bg-[#F2EFEF] rounded-lg font-sans sm:min-w-[400px] min-w-[300px]">
       <div className=" h-20 w-full bg-[#69F0AE] rounded-lg">
         <div className=" p-4 font-bold text-black text-2xl text-center">
           ประวัติสมัครงาน
@@ -16,7 +16,7 @@ const index = () => {
         รายละเอียดการสมัคร
       </div>
 
-      <div className="flex flex-col items-center w-3/4 h-full rounded-xl drop-shadow-xl p-2 my-3 font-sans">
+      <div className="flex flex-col items-center w-3/4 h-full rounded-xl drop-shadow-xl p-2 my-3 font-sans sm:min-w-[400px] min-w-[300px]">
         {/* card show รายเละเอียดการสมัครเเต่ละบล็อกๆ */}
         <div className="w-full h-55 rounded-xl bg-white mb-4">
           <div className="grid grid-row-3">
