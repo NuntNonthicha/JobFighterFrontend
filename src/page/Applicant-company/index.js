@@ -114,7 +114,7 @@ const handleSubmitNo = (e) => {
                 <div className="text-black border-2 border-gray-300 rounded-md block w-1/4 p-3 my-2 ml-5"></div>
               </div>
 
-              <div className="flex space-x-2 pt-5">
+              <div className="flex space-x-2 pt-5 mb-4">
                 ผลการสมัคร
                 <div className="flex space-x-3 ml-5">
                   <div className="flex space-x-8">
