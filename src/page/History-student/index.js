@@ -37,6 +37,7 @@ const HistoryStudent = () =>  {
 
   const status1 = "wait" /* เอา status ไปใส่ ลอง test ตัวเเปร ระหว่างรอจากหลังบ้าน */
 
+  /* เเต่งสี */
   const makeStyles = (status) => {
     if(status == 'Approved')
     {
@@ -53,7 +54,7 @@ const HistoryStudent = () =>  {
         return{
         background : "#FAAC40",
         color : "white",
-        border : 'solid 4px #FAAC40 ',
+        border : 'solid 8px #FAAC40 ',
         borderRadius : '15px',
         padding : '5px'
         }
@@ -92,9 +93,10 @@ const HistoryStudent = () =>  {
         {/* card show รายเละเอียดการสมัครเเต่ละบล็อกๆ */}
         {/* {job.post.map((item) => ( */}
         <div className="w-full h-55 rounded-xl bg-white mb-4">
-          <div className="grid grid-row-3">
+          <div className="grid grid-row-3 mb-2">
             {/* ชื่อบริษัท */}
             <div className="row-span-1 mt-3 ml-5 font-bold text-black text-lg">
+              ชื่อบริษัท
               {/* {item.status} */}
               {/* รอเอาค่าจากหลังบ้านมาใส่ */}
             </div>
@@ -138,7 +140,8 @@ const HistoryStudent = () =>  {
 
             {/* ผลการสมัคร*/}
             <div className="row-span-3 my-4 ml-5">
-              <div className="text-lg">
+              <div className="text-2xl space-x-4">
+                  <label className="text-lg ">ผลการสมัคร</label>
                   <span className="status" style={makeStyles(status1)}>wait</span>
               </div>
             </div>
