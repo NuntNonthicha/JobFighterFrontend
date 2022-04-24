@@ -35,11 +35,8 @@ const handleSubmitNo = (e) => {
   });
 };
 
-
-
-
   return (
-    <div className="flex flex-col items-center mx-20 my-20 bg-[#F2EFEF] rounded-lg font-sans  sm:min-w-[400px] min-w-[300px] ">
+    <div className="flex flex-col items-center mx-20 my-20 bg-[#F2EFEF] rounded-lg font-sans w-[1380px]  sm:min-w-[400px] min-w-[300px] ">
       <div className=" h-20 w-full bg-[#69F0AE] rounded-lg">
         <div className=" p-4 font-bold text-black text-2xl text-center">
           ใบสมัครของผู้สมัครงาน

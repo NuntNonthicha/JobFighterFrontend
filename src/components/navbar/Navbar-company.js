@@ -28,7 +28,7 @@ export default function Example() {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" >
+                <Disclosure.Button className="no-underline selection:inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" >
     
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -40,7 +40,7 @@ export default function Example() {
               </div>
               
                   {/* logo */}
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start no-underline">
                 <div className="flex-shrink-0 flex items-center">
                     <img
                     className="block lg:hidden h-8 w-auto"
@@ -66,8 +66,8 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-teal-400 text-white' : 'text-black hover:bg-teal-400 hover:text-white', 'text-decoration: none',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          item.current ? 'bg-teal-400 text-white no-underline' : 'no-underline text-black hover:bg-teal-400 hover:text-white', 'text-decoration: none',
+                          'px-3 py-2 rounded-md text-sm font-medium no-underline'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -107,7 +107,7 @@ export default function Example() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-teal-400' : '', 'block px-4 py-2 text-sm text-black')}
+                            className={classNames(active ? 'bg-teal-400 no-underline' : '', 'no-underline block px-4 py-2 text-sm text-black')}
                           >
                             Profile
                           </a>
@@ -119,7 +119,7 @@ export default function Example() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-teal-400' : '', 'block px-4 py-2 text-sm text-black')}
+                            className={classNames(active ? 'bg-teal-400 no-underline' : '', 'no-underline block px-4 py-2 text-sm text-black')}
                           >
                             Sign out
                           </a>
@@ -140,8 +140,8 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-teal-400 text-white' : 'text-gray-300 hover:bg-teal-400 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current ? 'bg-teal-400 text-white no-underline' : 'no-underline text-gray-300 hover:bg-teal-400 hover:text-white',
+                    'block px-3 py-2 rounded-md text-base font-medium no-underline'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
