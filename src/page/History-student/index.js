@@ -95,7 +95,7 @@ const HistoryStudent = () =>  {
           <div className="grid grid-row-3">
             {/* ชื่อบริษัท */}
             <div className="row-span-1 mt-3 ml-5 font-bold text-black text-lg">
-              ชื่อบริษัท
+              {/* {item.status} */}
               {/* รอเอาค่าจากหลังบ้านมาใส่ */}
             </div>
             <div className="p-1  border-b-2 border-zinc-400 my-2 mx-3"></div>
@@ -106,7 +106,6 @@ const HistoryStudent = () =>  {
                 <div class="flex col-span-3">
                   {/* ตำเเหน่งงานหรือชื่อบริษัท */}
                   <div className=" py-1.5  focus:outline-none text-black">
-                    ตำเเหน่งงานหรือชื่อบริษัท
                     {/* รอเอาค่าจากหลังบ้านมาใส่ */}
                   </div>
                 </div>
@@ -120,7 +119,6 @@ const HistoryStudent = () =>  {
                   />
                   {/* ที่อยู่ address บริษัท */}
                   <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
-                    ที่อยู่
                     {/* รอเอาค่าจากหลังบ้านมาใส่ */}
                   </div>
                 </div>
