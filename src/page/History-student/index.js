@@ -1,9 +1,81 @@
-import React from "react";
+import { data } from "autoprefixer";
+import React, { useEffect, useState } from "react";
 import Address from "../../assets/pics/Address.png";
 import Company1 from "../../assets/pics/Company1.png";
+// import { useSelector } from "react-redux";
+// import { getJob } from "../../api/job"
 
 
-const index = () => {
+const HistoryStudent = () =>  {
+
+  // const { user } = useSelector((state) => ({ ...state }));
+
+  // const [job, setJob] = useState({
+  //  post: [],
+  // });
+
+  // useEffect(() => {
+  //   //code
+  //   loadData(user.token);
+  // }, []);
+
+  // const loadData = (authtoken) => {
+  //   //code
+    
+  //   getJob(authtoken) // ดึงข้อมูล Post ทั้งหมดมา 
+  //     .then(  (res) => {  
+  //       //code
+  //       setJob({...job,post: res.data}); //  set ตัวแปร post ให้เท่ากับ ข้อมูล Post ทั้งหมดที่โหลดมา
+  //       console.log(job.post)
+  //     })
+  //     .catch((err) => {
+  //       //err
+  //       console.log("Error loadData", err.response.data);
+  //     });
+  // };
+
+
+  const status1 = "wait" /* เอา status ไปใส่ ลอง test ตัวเเปร ระหว่างรอจากหลังบ้าน */
+
+  const makeStyles = (status) => {
+    if(status == 'Approved')
+    {
+      return{
+        background : "#24AB82",
+        color : "white",
+        border : 'solid 4px #24AB82',
+        borderRadius : '15px',
+        padding : '5px'
+      }
+    }
+    else if(status == 'wait')
+    {
+        return{
+        background : "#FAAC40",
+        color : "white",
+        border : 'solid 4px #FAAC40 ',
+        borderRadius : '15px',
+        padding : '5px'
+        }
+    }
+    else 
+    {
+        return{
+        background : "#FF3358",
+        color : "white",
+        border : 'solid 4px #FF3358',
+        borderRadius : '15px',
+        padding : '5px'
+        }
+    }
+  };
+
+  // useEffect(async() =>{
+  //   try{
+
+  //   }catch (err) {}
+  // }, []);
+
   return (
     <div className="flex flex-col items-center mx-72 my-20 bg-[#F2EFEF] rounded-lg font-sans sm:min-w-[400px] min-w-[300px]">
       <div className=" h-20 w-full bg-[#69F0AE] rounded-lg">
@@ -18,6 +90,7 @@ const index = () => {
 
       <div className="flex flex-col items-center w-3/4 h-full rounded-xl drop-shadow-xl p-2 my-3 font-sans sm:min-w-[400px] min-w-[300px]">
         {/* card show รายเละเอียดการสมัครเเต่ละบล็อกๆ */}
+        {/* {job.post.map((item) => ( */}
         <div className="w-full h-55 rounded-xl bg-white mb-4">
           <div className="grid grid-row-3">
             {/* ชื่อบริษัท */}
@@ -66,18 +139,17 @@ const index = () => {
             </div>
 
             {/* ผลการสมัคร*/}
-            <div className="row-span-3 my-2 ml-5">
-              ผลการสมัคร
-              <div className="">
-
+            <div className="row-span-3 my-4 ml-5">
+              <div className="text-lg">
+                  <span className="status" style={makeStyles(status1)}>wait</span>
               </div>
             </div>
           </div>
+          {/* ))} */}
         </div>
-
       </div>
     </div>
   );
 };
 
-export default index;
+export default HistoryStudent;
