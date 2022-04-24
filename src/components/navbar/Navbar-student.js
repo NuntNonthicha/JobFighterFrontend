@@ -64,7 +64,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'no-underline bg-teal-400 text-white' : 'text-black hover:bg-teal-400 hover:text-white', 'text-decoration: none',
+                          item.current ? 'no-underline bg-teal-400 text-white' : 'no-underline text-black hover:bg-teal-400 hover:text-white', 'text-decoration: none',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -105,7 +105,7 @@ export default function Example() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'no-underline bg-teal-400' : '', 'block px-4 py-2 text-sm text-black')}
+                            className={classNames(active ? 'no-underline bg-teal-400' : '', 'no-underline block px-4 py-2 text-sm text-black')}
                           >
                             Profile
                           </a>
@@ -117,7 +117,7 @@ export default function Example() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'no-underline bg-teal-400' : '', 'block px-4 py-2 text-sm text-black')}
+                            className={classNames(active ? 'no-underline bg-teal-400' : '', 'no-underline block px-4 py-2 text-sm text-black')}
                           >
                             Sign out
                           </a>
@@ -138,8 +138,8 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'no-underline bg-teal-400 text-white' : 'text-gray-300 hover:bg-teal-400 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current ? 'no-underline bg-teal-400 text-white' : 'no-underline text-gray-300 hover:bg-teal-400 hover:text-white',
+                    'block px-3 py-2 rounded-md text-base font-medium no-underline'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

@@ -1,19 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { saveAs } from "file-saver";
 
-const index = () => {
+
+const ApplicantCompany = () => {
   const saveFile = () => {
     saveAs(
       "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
       "example.pdf"
     );
+    
   };
-//   const handleOKClick = () => {
-//     setResult(false);
-//   };
-//   const handleCancelClick = () => {
-//     setResult(false);
-//   };
+const [value,setValue] = useState({
+  ClickYes : false,
+  ClickNo : false,
+  canClick : true
+});
+
+const handleSubmitYes = (e) => {
+  alert("ยืนยันผลการสมัคร");
+  e.preventDefault();
+  setValue({
+    canClick: false,
+    ClickYes : true,
+  });
+
+};
+
+const handleSubmitNo = (e) => {
+  alert("ยืนยันผลการสมัคร");
+  e.preventDefault();
+  setValue({
+    canClick: false,
+    ClickNo : true,
+  });
+};
+
+
+
 
   return (
     <div className="flex flex-col items-center mx-20 my-20 bg-[#F2EFEF] rounded-lg font-sans  sm:min-w-[400px] min-w-[300px] ">
@@ -95,15 +118,16 @@ const index = () => {
                 ผลการสมัคร
                 <div className="flex space-x-3 ml-5">
                   <div className="flex space-x-8">
-                    <button
-                      className=" bg-[#24AB82] drop-shadow-md font-bold text-white text-2xl rounded-xl px-10 py-2.5 hover:bg-[#1F795E] hover:ring-2 hover:ring-white "
-                    //   onClick={handleOKClick}
+                  <button className={` ${ value.ClickNo ?  'bg-[#E2E2E2] hover:bg-[#E2E2E2]' :'bg-[#24AB82] hover:bg-[#1F795E] hover:ring-2 hover:ring-white' } drop-shadow-md font-bold text-white text-2xl rounded-xl px-6 py-2.5 `}
+                      onClick={handleSubmitYes}
+                      disabled={value.canClick === false}
                     >
                       ผ่าน
                     </button>
 
-                    <button className=" bg-[#FF3358] drop-shadow-md font-bold text-white text-2xl rounded-xl px-6 py-2.5 hover:bg-[#DE2D4D] hover:ring-2 hover:ring-white"
-                    // onClick={handleCancelClick}
+                    <button className={` ${ value.ClickYes ? 'bg-[#E2E2E2] hover:bg-[#E2E2E2]' :'bg-[#FF3358] hover:bg-[#DE2D4D] hover:ring-2 hover:ring-white' } drop-shadow-md font-bold text-white text-2xl rounded-xl px-6 py-2.5  `}
+                      onClick={handleSubmitNo}
+                      disabled={value.canClick === false}
                     >
                       ไม่ผ่าน
                     </button>
@@ -118,4 +142,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default ApplicantCompany;
