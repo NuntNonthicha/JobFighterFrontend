@@ -4,13 +4,16 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import LogoJF from '../../assets/logoJF/LogoJF.svg'; //อยู่คนละ folder ต้องเพิ่ม ../
 import Profile from '../../assets/pics/Profile.png';
+import { Link } from  'react-router-dom';
 
 
+/* ใส่ path ตรงนี้ + ข้างล่างตรง Profile บรรทัดที่ 108 */
 const navigation = [
-  { name: 'หน้าหลัก', href: '/homestudent'  , current: false },
-  { name: 'ค้นหางาน', href: '/search'  , current: false },
-  { name: 'ประวัติสมัครงาน', href: '/historystudent', current: false },
-  { name: 'ติดต่อสอบถาม', href: '/applicantcompany', current: false },
+  
+  { name: 'หน้าหลัก', link: '/homestudent'  , current: false },
+  { name: 'ค้นหางาน', link: '/search'  , current: false },
+  { name: 'ประวัติสมัครงาน', link: '/historystudent', current: false },
+  { name: 'ติดต่อสอบถาม', link: '/applicantcompany', current: false },
 ]
 
 function classNames(...classes) {
@@ -50,19 +53,16 @@ export default function Example() {
                     img src={LogoJF} 
                     alt="logo"
                   /> 
-                  {/* <img src='./assets/logo/JF_logo.png' alt="logo"></img>  */}
-                   {/* <div className='navbar-logo'>
-                        <img src={JF_logo} />
-                  </div>  */}
                 </div>
                 
                 {/* เเก้สีตัวอักษร navbar */}
                 <div className="no-underline hidden sm:block sm:ml-6 ">
-                  <div className="no-underline flex space-x-4">
+                  <div className="flex space-x-6 items-center ">
                     {navigation.map((item) => (
+                      <Link to = {item.link} className='no-underline'>
                       <a
                         key={item.name}
-                        href={item.href}
+                        link={item.link}
                         className={classNames(
                           item.current ? 'no-underline bg-teal-400 text-white' : 'no-underline text-black hover:bg-teal-400 hover:text-white', 'text-decoration: none',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -71,6 +71,7 @@ export default function Example() {
                       >
                         {item.name}
                       </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -103,24 +104,24 @@ export default function Example() {
                     {/* Profile */}
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link to
+                            ={"/"} /* ใส่ path ไปหน้า Profile */
                             className={classNames(active ? 'no-underline bg-teal-400' : '', 'no-underline block px-4 py-2 text-sm text-black')}
                           >
                             Profile
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                       
                       {/* Signout */}
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link to
+                          ={"/homestudent"} /* ใส่ pathไป logout */
                             className={classNames(active ? 'no-underline bg-teal-400' : '', 'no-underline block px-4 py-2 text-sm text-black')}
                           >
                             Sign out
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                     </Menu.Items>
@@ -133,10 +134,11 @@ export default function Example() {
           <Disclosure.Panel className="sm:hidden no-underline">
             <div className="px-2 pt-2 pb-3 space-y-1 no-underline">
               {navigation.map((item) => (
+                <Link to = {item.link} className='no-underline'>
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  link={item.link}
                   className={classNames(
                     item.current ? 'no-underline bg-teal-400 text-white' : 'no-underline text-gray-300 hover:bg-teal-400 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium no-underline'
@@ -145,6 +147,7 @@ export default function Example() {
                 >
                   {item.name}
                 </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>

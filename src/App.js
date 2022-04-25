@@ -17,6 +17,7 @@ import Aboutus from "./page/About-us";
 import Historystudent from "./page/History-student";
 import Applicantcompany from "./page/Applicant-company";
 // import Searchresult from "./page/Search-result";
+import Applyjob from './page/Apply-job';
 import Layout from "./page/Layout";
 
 
@@ -40,6 +41,7 @@ function App(){
           <Route path="/search" element={<Search />} />
           <Route path="/historystudent" element={<Historystudent/>} />
           <Route path="/aboutus" element={<Aboutus/>} />
+          <Route path="/applyjob" element={<Applyjob/>} />
           {/* <Route path="/searchresult" element={<Searchresult/>} /> */}
           <Route path="/applicantcompany" element={<Applicantcompany/>} />
 
