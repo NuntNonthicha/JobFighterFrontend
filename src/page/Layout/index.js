@@ -6,8 +6,8 @@ function Layout() {
   
   return (
     <div className="h-screen">
-      {/* <Navbarstudent/>  */}
-      <Navbarcompany/>
+      <Navbarstudent/> 
+      {/* <Navbarcompany/> */}
       
       
       <Outlet />
