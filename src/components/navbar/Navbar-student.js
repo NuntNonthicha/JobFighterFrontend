@@ -22,7 +22,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className= "no-underline border-b-[1.5px] bg-white"> 
+    <Disclosure as="nav" className= "no-underline border-b-[1.5px] bg-white font-sans"> 
       {({ open }) => (
         <>
           <div className="no-underline max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@ export default function Example() {
                 
                 {/* เเก้สีตัวอักษร navbar */}
                 <div className="no-underline hidden sm:block sm:ml-6 ">
-                  <div className="flex space-x-6 items-center ">
+                  <div className="flex  space-x-6 items-center ">
                     {navigation.map((item) => (
                       <Link to = {item.link} className='no-underline'>
                       <a

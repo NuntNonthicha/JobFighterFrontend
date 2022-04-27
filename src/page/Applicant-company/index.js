@@ -48,7 +48,7 @@ const handleSubmitNo = (e) => {
       </div>
 
       {/* card show รายเละเอียดการสมัครเเต่ละบล็อกๆ */}
-      <div className="flex flex-row items-center w-3/4 h-full rounded-xl  drop-shadow-xl p-2 my-3 font-sans w-[1180px] sm:min-w-[400px] min-w-[300px] ">
+      <div className="flex flex-row items-center  h-full rounded-xl  drop-shadow-xl p-2 my-3 font-sans w-[1180px] sm:min-w-[400px] min-w-[300px] ">
         <div className="flex w-full h-55 rounded-xl bg-white mb-4">
           {/* รายละเอียดของผู้สมัครงาน */}
           <div className="flex pl-12 py-3">

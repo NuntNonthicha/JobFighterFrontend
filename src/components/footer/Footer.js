@@ -1,10 +1,11 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 
-export default function Footer() {
+
+function Footer() {
   return (
-    <footer className="p-4 bg-green-300 shadow md:px-6 md:py-5 dark:bg-gray-800 text-decoration: none position:fixed font-sans;
-    bottom:0;">
+    <div className="p-4 bg-green-300 shadow md:px-6 md:py-5 dark:bg-gray-800 text-decoration: none position:fixed bottom-0 font-sans;
+    ">
       <div className="sm:flex sm:items-center sm:justify-between text-decoration: none text-black">
         <h1 style={{ color: "black", textAlign: "left" }}>Jobfighter</h1>
 
@@ -33,6 +34,8 @@ export default function Footer() {
         . All Rights Reserved. */}
       </span>
       
-    </footer>
+    </div>
   );
-}
+};
+
+export default Footer;

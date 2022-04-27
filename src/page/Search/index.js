@@ -140,7 +140,7 @@ function Send_data() {
     ) /* สมมติอยู่ในหน้าที่ 6 ก็เเสดงว่าเราเห็นผู้ใช้มาเเล้ว 18 คน , ต่อไปก็หน้าที่ 7 คือหน้าที่ต้องการอันดับเเรก จึงเปนตัวเเปรนี้ + หน้าที่เยี่ยมชมรวมถึงจน.ผู้ใช้ต่อหน้า หน้าที่ 6 มี item 18 ซึ่ง pagesVisited = 18 + 3 */
     .map((user) => {
       return (
-        <div className="user">
+        <div className="user font-sans">
           {/* ผลการค้นหา ที่เเสดง card ออกมาเป็นบล็อคๆ*/}
           <div className="w-3/4 w-100 h-55 rounded-xl bg-white drop-shadow-md p-2 my-4 font-sans">
             <div className="grid grid-rows-3 grid-flow-col gap-0.5 ">
@@ -193,7 +193,7 @@ function Send_data() {
                 span="location"
               />
               <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
-                {user.email}
+                {/* {user.email} */}
                 {/* รอเอาค่าจากหลังบ้านมาใส่ */}
               </div>
             </div>
