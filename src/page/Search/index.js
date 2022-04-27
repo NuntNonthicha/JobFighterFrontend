@@ -7,6 +7,7 @@ import Salary from "../../assets/pics/Salary.png";
 import JsonData from "./MOCK_DATA.json";
 import ReactPaginate from "react-paginate";
 import "./Searchresult.css";
+import githubprofile from "../../assets/pics/githubprofile.PNG";
 
 /* Pagination */
 function Send_data() {
@@ -161,40 +162,45 @@ function Send_data() {
               </div>
 
               {/* logo company */}
-              <div className="row-span-3 grid ml-20 justify-items-center">
-                <div className="w-20 h-20 rounded-xl bg-[#E2E2E2] ">
+              <div className="row-span-3 grid ml-20 justify-items-center align-items-center">
+                <div className="flex w-20 h-20 rounded-xl items-center bg-[#E2E2E2] ">
                   <img
-                    src={Company1} //ลองใส่รูปไปก่อน รอดึง logo จากหลังบ้าน
+                    src={githubprofile} //ลองใส่รูปไปก่อน รอดึง logo จากหลังบ้าน
                     alt="logoCompany"
                     span="location"
                   />
                 </div>
               </div>
             </div>
-            <div className="flex flex-row">
-              {/* logo address */}
-              <img
-                src={Address}
-                alt="logoAddress"
-                className=" h-5 w-5 ml-8"
-                span="location"
-              />
-              {/* ที่อยู่ address บริษัท */}
-              <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
-                {user.email}
-                {/* รอเอาค่าจากหลังบ้านมาใส่ */}
+            
+            <div className="flex flex-row ">
+              <div className="flex min-w-[50%] ">
+                {/* logo address */}
+                <img
+                  src={Address}
+                  alt="logoAddress"
+                  className=" h-5 w-5 ml-8"
+                  span="location"
+                />
+                {/* ที่อยู่ address บริษัท */}
+                <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm ">
+                  {user.email}
+                  {/* รอเอาค่าจากหลังบ้านมาใส่ */}
+                </div>
               </div>
 
-              {/* เงินเดือน บริษัท */}
-              <img
-                src={Salary}
-                alt="logoAddress"
-                className=" h-5 w-5 ml-8"
-                span="location"
-              />
-              <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
-                {/* {user.email} */}
-                {/* รอเอาค่าจากหลังบ้านมาใส่ */}
+              <div className="flex min-w-[50%] ">
+                {/* เงินเดือน บริษัท */}
+                <img
+                  src={Salary}
+                  alt="logoAddress"
+                  className=" h-5 w-5 ml-8"
+                  span="location"
+                />
+                <div className="px-0.5 py-1.5  focus:outline-none ml-2 text-black text-sm">
+                  {user.email}
+                  {/* รอเอาค่าจากหลังบ้านมาใส่ */}
+                </div>
               </div>
             </div>
           </div>
@@ -231,7 +237,7 @@ function Send_data() {
                   name="college"
                   className=" w-100 h-10 rounded-xl bg-white drop-shadow-md  text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
-                  // onChange={handleChange}
+                // onChange={handleChange}
                 >
                   <option>ระบุมหาลัยที่ต้องการจะเลือก</option>
                   <option>ลาดกระบัง</option>
@@ -246,7 +252,7 @@ function Send_data() {
                   name="faculty"
                   className="w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
-                  // onChange={handleChange}
+                // onChange={handleChange}
                 >
                   <option>ระบุคณะที่ต้องการจะเลือก</option>
                   <option>วิศวกรรมศาสตร์</option>
@@ -261,7 +267,7 @@ function Send_data() {
                   name="program"
                   className="w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
-                  // onChange={handleChange}
+                // onChange={handleChange}
                 >
                   <option>ระบุสาขาที่ต้องการจะเลือก</option>
                   {programList.map((e, idx) => (
@@ -277,7 +283,7 @@ function Send_data() {
                   name="jobType"
                   className=" w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82]"
-                  // onChange={handleChange}
+                // onChange={handleChange}
                 >
                   <option>ระบุประเภทงานที่ต้องการจะเลือก</option>
                   {jobTypeList.map((e, idx) => (
@@ -293,7 +299,7 @@ function Send_data() {
                   name="address"
                   className="w-100 h-10 rounded-xl bg-white drop-shadow-md text-zinc-400 placeholder:text-zinc-400
                   focus:outline-none focus:border-[#24AB82] focus:ring-1 focus:ring-[#24AB82] "
-                  // onChange={handleChange}
+                // onChange={handleChange}
                 >
                   <option>ระบุสถานที่ทำงาน (จังหวัด)</option>
                   {/* {provinces.map((item,index)=>
@@ -352,7 +358,7 @@ function Send_data() {
               <div className="flex items-center ml-2.5 mt-3 space-y-4 ">
                 <button
                   className=" bg-[#24AB82] drop-shadow-md font-bold text-white text-2xl rounded-xl px-6 py-2.5 hover:bg-[#1F795E] hover:ring-2 hover:ring-white "
-                  //disabled={value.wageMin < 0 || value.wageMax < 0}
+                //disabled={value.wageMin < 0 || value.wageMax < 0}
                 >
                   ค้นหา
                 </button>
